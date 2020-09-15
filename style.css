@@ -6723,6 +6723,116 @@ ul.blog-author-name li {
   border-radius: 15px !important;
   overflow: hidden !important; }
 
+/*About timeline*/
+.card-body {
+  flex: 1 1 auto;
+  padding: 1.25rem; }
+
+.vertical-timeline {
+  width: 100%;
+  position: relative;
+  padding: 1.5rem 0 1rem; }
+
+.vertical-timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 66px;
+  height: 100%;
+  width: 4px;
+  background: #e9ecef;
+  border-radius: .25rem; }
+
+.vertical-timeline-element {
+  position: relative;
+  margin: 0 0 1rem; }
+
+.vertical-timeline-element-icon {
+  position: absolute;
+  top: -5px;
+  left: 55px; }
+
+.badge:empty {
+  display: none; }
+
+.vertical-timeline-element-content {
+  position: relative;
+  margin-left: 90px;
+  font-size: .8rem; }
+
+.vertical-timeline-element-content .timeline-title {
+  font-size: .8rem;
+  text-transform: uppercase;
+  margin: 0 0 .5rem;
+  padding: 2px 0 0;
+  font-weight: bold; }
+
+.vertical-timeline-element-content .vertical-timeline-element-date {
+  display: block;
+  position: absolute;
+  left: -90px;
+  top: 0;
+  padding-right: 10px;
+  text-align: right;
+  color: #adb5bd;
+  font-size: .7619rem;
+  white-space: nowrap; }
+
+.vertical-timeline-element-content:after {
+  content: "";
+  display: table;
+  clear: both; }
+/*footer*/
+.footer-recent-post li a {
+  color: #151515;
+  font-size: 14px;
+}
+.footer-recent-post li a:hover {
+  color: #f3f3f3;
+}
+.footer-contact p {
+  color: #151515;
+  font-size: 14px;
+}
+
+.intro-section {
+  position: relative; }
+.intro-section, .intro-section .container .row {
+  height: 100vh;
+  min-height: 900px; }
+.intro-section:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 70%;
+  background: #ffaa44;
+  border-bottom-right-radius: 0px; }
+@media (max-width: 991.98px) {
+  .intro-section:before {
+    width: 100%; } }
+.intro-section h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #fff; }
+.intro-section p {
+
+  font-size: 1.1rem;
+  max-width: 400px; }
+
+.img-absolute {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+.img-absolute img {
+  max-width: 600px;
+  -webkit-box-shadow: 0 10px 50px -5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 10px 50px -5px rgba(0, 0, 0, 0.4); }
+@media (max-width: 991.98px) {
+  .img-absolute img {
+    max-width: 100%; } }
 /* Animate on entrance */
 .animate-in-down {
   transition: all 1.3s ease-out;
