@@ -395,6 +395,12 @@ ul.blog-author-name li {
 }
 
 /*footer*/
+.fbt-bottom-shape .fbt-footer-wave-big {
+  height: 300px;
+}
+.fbt-bottom-shape svg {
+  fill: #ffaa44;
+}
 .footer-recent-post li a {
   color: theme-color("dark");
   font-size: 14px;

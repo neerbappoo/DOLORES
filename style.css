@@ -6794,7 +6794,13 @@ ul.blog-author-name li {
   color: #151515;
   font-size: 14px;
 }
-
+.fbt-bottom-shape .fbt-footer-wave-big {
+  height: 300px;
+}
+.fbt-bottom-shape svg {
+  fill: #ffaa44;
+}
+/*footer*/
 .intro-section {
   position: relative; }
 .intro-section, .intro-section .container .row {
