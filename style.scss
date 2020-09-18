@@ -17,6 +17,7 @@ $enable-transitions:        true;
 $enable-hover-media-query:  false;
 $enable-grid-classes:       true;
 $enable-print-styles:       true;
+$enable-responsive-font-sizes: true;
 
 // Variables
 //
@@ -24,7 +25,7 @@ $enable-print-styles:       true;
 
 $theme-colors: (
   primary: #ffaa44,
-  secondary: #4f70ce,
+  secondary: #fff,
   light: #f3f3f3,
   dark: #151515,
   info: #ccc,
@@ -213,6 +214,49 @@ body > * {
 .navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
     color: theme-color("primary");
 }
+/*cover*/
+@include media-breakpoint-down(sm) { .cover .content {
+  background-color: transparentize(theme-color("light"), 0.5);
+  padding: 1rem;
+  
+  } }
+/*Portfolio*/
+.portfolio .card {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transition: 0.5s all;
+}
+.portfolio .card:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4)
+}
+.image-wrapper {
+  position: relative;
+  width: 100%;
+}
+.image-wrapper:hover .image-overlay {
+  opacity: 1;
+}
+.image-wrapper .image-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: #ffaa44bd;
+}
+.image-wrapper .icon {
+  color: #fff;
+  font-size: 45px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  text-align: center;
+}
 /*All Blog*/
 .blog-item {
     padding-bottom: 60px;
@@ -321,6 +365,10 @@ ul.blog-author-name li {
     border-radius: 15px!important;
     overflow: hidden!important;
 }
+.radius-30 {
+    border-radius: 30px!important;
+    overflow: hidden!important;
+}
 /*About timeline*/
 .card-body {
     flex: 1 1 auto;
@@ -411,6 +459,17 @@ ul.blog-author-name li {
 .footer-contact p {
   color: theme-color("dark");
   font-size: 14px;
+}
+.fbt-bottom-shape .fbt-footer-wave-big {
+  height: 300px;
+}
+@media (max-width: 991.98px){
+  .fbt-bottom-shape .fbt-footer-wave-big {
+    height: 150px;
+  }
+}
+.fbt-bottom-shape svg {
+  fill: #ffaa44;
 }
 /* Animate on entrance */
 
