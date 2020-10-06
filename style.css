@@ -5431,7 +5431,7 @@ button.bg-dark:focus {
 
 .pt-5,
 .py-5 {
-  padding-top: 9.5rem !important;
+  padding-top: 3rem !important;
 }
 
 .pr-5,
@@ -5440,7 +5440,7 @@ button.bg-dark:focus {
 
 .pb-5,
 .py-5 {
-  padding-bottom: 18.5rem !important;
+  padding-bottom: 3rem !important;
 }
 
 .pl-5,
@@ -6601,7 +6601,71 @@ body > * {
 
 .carousel .carousel-indicators {
   bottom: 0px; }
-
+/*podcast topbar*/
+.podcast-top {
+  background: #333;
+  color: #fff;
+  font-size: .75em;
+}
+.podcast-top .podcast-wrapper {
+  overflow: auto;
+  width: 100%;
+  margin: 0 auto;
+}
+.podcast-text {
+  float: left;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+  font-weight: 600;
+  
+}
+.podcast-text-desktop.podcast-text span:last-child {
+  float: right;
+  /* max-width: calc(100% - 245px); */
+  overflow: hidden;
+  max-width: 230px;
+  /* width: 100%; */
+}
+.podcast-text-desktop.podcast-text span:last-child em {
+  font-weight: 400;
+  display: inline-block;
+  -webkit-animation: marquee 12s linear infinite;
+  animation: marquee 12s linear infinite;
+}
+.podcast-text .marquee {
+  -moz-animation: marquee 10s linear infinite;
+  -webkit-animation: marquee 10s linear infinite;
+  animation: marquee 10s linear infinite;
+}
+@-moz-keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@-webkit-keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes marquee {
+  0% {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%)
+  }
+  100% {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
 /* Animate state between .navbar and .navbar-ontop */
 .navbar {
   transition: background-color .5s ease-out; }
@@ -6757,6 +6821,64 @@ body > * {
 .clients img:hover {
   cursor: pointer;
 }
+/**
+ * Slider Controls
+ *
+ * 1. Vertically centre arrows with the product image.
+ */
+.o-slider-product-tray__controls {
+  display: none;
+}
+
+@media screen and (min-width: 900px) {
+  .o-slider-product-tray__controls {
+    display: block;
+  }
+}
+.o-slider-product-tray__button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-width: 0;
+  background-color: transparent;
+  cursor: pointer;
+  margin-top: -40px;
+  /* position: absolute; */
+  top: 50%;
+}
+.o-slider-product-tray__button:focus {
+  outline: 0;
+}
+.o-slider-product-tray__button[disabled] {
+  cursor: default;
+}
+
+.o-slider-product-tray__button--prev {
+  left: -24px;
+}
+
+.o-slider-product-tray__button--next {
+  right: -24px;
+}
+
+.o-slider-product-tray__arrow {
+  display: inline-block;
+  fill: #aaa;
+  height: 24px;
+  width: 24px;
+}
+.o-slider-product-tray__arrow:hover {
+  fill: #222;
+}
+.o-slider-product-tray__button[disabled] .o-slider-product-tray__arrow {
+  fill: #ddd;
+}
+
+.o-slider-product-tray__arrow--next {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
 /*All Blog*/
 .blog-item {
   padding-bottom: 60px;

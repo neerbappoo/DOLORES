@@ -11,12 +11,34 @@
   <!-- CSS dependencies -->
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
+  <!-- Script: Make my navbar transparent when the document is scrolled to top -->
+  <!--<script src="js/navbar-ontop.js"></script>-->
   <!-- Script: Animated entrance -->
   <script src="js/animate-in.js"></script>
 </head>
 
 <body class="">
   <!-- Navbar -->
+  <div class="podcast-top dark" >
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 col-12 my-auto p-md-0">
+          <div class="podcast-text podcast-text-desktop">
+            <span class="d-md-none d-none d-lg-inline-block px-1">Listen To My Latest Podcast Episode:</span>
+            <span class=""><em>Episode 01: How To Restore Travel Confidence</em></span>
+          </div>
+        </div>
+        <div class="col-md-7 col-12 p-md-0 px-md-1 my-2">
+          <div class="player">
+            <audio id="player2" preload="none" controls="" style="max-width: 100%">
+              <source src="http://www.largesound.com/ashborytour/sound/AshboryBYU.mp3" type="audio/mp3">
+            </audio>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <nav class="navbar navbar-expand-md navbar-light shadow navbar-ontop">
     <div class="container">
       <a class="navbar-brand logo" href="index.html">
@@ -118,7 +140,7 @@
           <h3>Podcast</h3>
           <div class="row">
             <div class="col-md-5 col-12">
-              <img src="img/show_4.jpg" alt="" class="img-fluid">
+              <img src="img/truthbehindtravelpodcast-min.jpg" alt="" class="img-fluid">
             </div>
             <div class="col-md-7 col-12">
               <p class="mt-md-0 mt-2">Episode 01: How To Restore Travel Confidence</p>

@@ -350,6 +350,63 @@ body > * {
 .clients img:hover {
   cursor: pointer;
 }
+/**
+ * Slider Controls
+ *
+ * 1. Vertically centre arrows with the product image.
+ */
+.o-slider-product-tray__controls {
+  display: none;
+}
+
+@media screen and (min-width: 900px) {
+  .o-slider-product-tray__controls {
+    display: block;
+  }
+}
+.o-slider-product-tray__button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-width: 0;
+  background-color: transparent;
+  cursor: pointer;
+  margin-top: -40px;
+  /* position: absolute; */
+  top: 50%;
+}
+.o-slider-product-tray__button:focus {
+  outline: 0;
+}
+.o-slider-product-tray__button[disabled] {
+  cursor: default;
+}
+
+.o-slider-product-tray__button--prev {
+  left: -24px;
+}
+
+.o-slider-product-tray__button--next {
+  right: -24px;
+}
+
+.o-slider-product-tray__arrow {
+  display: inline-block;
+  fill: #aaa;
+  height: 24px;
+  width: 24px;
+}
+.o-slider-product-tray__arrow:hover {
+  fill: #222;
+}
+.o-slider-product-tray__button[disabled] .o-slider-product-tray__arrow {
+  fill: #ddd;
+}
+
+.o-slider-product-tray__arrow--next {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
 /*All Blog*/
 .blog-item {
     padding-bottom: 60px;
