@@ -6578,9 +6578,10 @@ body > * {
   background: rgba(243, 243, 243, 0.75); }
 
 .section-parallax {
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  }
 
 .bg-aquamarine {
   background: linear-gradient(-30deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 170, 68, 0.9) 50%, rgba(255, 170, 68, 0.95) 100%);
