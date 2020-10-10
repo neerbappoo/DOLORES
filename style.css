@@ -6578,7 +6578,7 @@ body > * {
   background: rgba(243, 243, 243, 0.75); }
 
 .section-parallax {
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
   }
