@@ -7398,3 +7398,19 @@ blockquote {
 .animate-in-right.out-of-viewport {
   opacity: 0;
   left: 5%; }
+
+.fusion-sep-clear {
+    clear: both;
+    display: block;
+    height: 1px;
+    font-size: 0;
+    line-height: 0;
+    width: 100%;
+    overflow: hidden;
+}
+.fusion-separator {
+    border: 0 solid #e7e6e6;
+    clear: both;
+    position: relative;
+    z-index: 11;
+}
